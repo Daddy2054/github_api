@@ -39,6 +39,8 @@ func CreateRepo(
 		request,
 		headers,
 	)
+	fmt.Println(response)
+	fmt.Println(err)
 	if err != nil {
 		log.Printf(
 			"error when trying to create new repo in github: %s",
